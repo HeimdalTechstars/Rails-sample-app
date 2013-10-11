@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://localhost:3000/users -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Ruby on Rails Tutorial Sample App | All users</title>
+  <link data-turbolinks-track="true" href="http://localhost:3000/assets/application.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://localhost:3000/assets/custom.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://localhost:3000/assets/sessions.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://localhost:3000/assets/static_pages.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://localhost:3000/assets/users.css?body=1" media="all" rel="stylesheet">
+  <script data-turbolinks-track="true" src="./Ruby on Rails Tutorial Sample App   All users_files/jquery.js"></script>
+<script data-turbolinks-track="true" src="./Ruby on Rails Tutorial Sample App   All users_files/jquery_ujs.js"></script>
+<script data-turbolinks-track="true" src="./Ruby on Rails Tutorial Sample App   All users_files/bootstrap-transition.js"></script>
+<script data-turbolinks-track="true" src="./Ruby on Rails Tutorial Sample App   All users_files/bootstrap-affix.js"></script>
+<script data-turbolinks-track="true" src="./Ruby on Rails Tutorial Sample App   All users_files/bootstrap-alert.js"></script>
+<script data-turbolinks-track="true" src="./Ruby on Rails Tutorial Sample App   All users_files/bootstrap-button.js"></script>
+<script data-turbolinks-track="true" src="./Ruby on Rails Tutorial Sample App   All users_files/bootstrap-carousel.js"></script>
+<script data-turbolinks-track="true" src="./Ruby on Rails Tutorial Sample App   All users_files/bootstrap-collapse.js"></script>
+<script data-turbolinks-track="true" src="./Ruby on Rails Tutorial Sample App   All users_files/bootstrap-dropdown.js"></script>
+<script data-turbolinks-track="true" src="./Ruby on Rails Tutorial Sample App   All users_files/bootstrap-modal.js"></script>
+<script data-turbolinks-track="true" src="./Ruby on Rails Tutorial Sample App   All users_files/bootstrap-scrollspy.js"></script>
+<script data-turbolinks-track="true" src="./Ruby on Rails Tutorial Sample App   All users_files/bootstrap-tab.js"></script>
+<script data-turbolinks-track="true" src="./Ruby on Rails Tutorial Sample App   All users_files/bootstrap-tooltip.js"></script>
+<script data-turbolinks-track="true" src="./Ruby on Rails Tutorial Sample App   All users_files/bootstrap-popover.js"></script>
+<script data-turbolinks-track="true" src="./Ruby on Rails Tutorial Sample App   All users_files/bootstrap-typeahead.js"></script>
+<script data-turbolinks-track="true" src="./Ruby on Rails Tutorial Sample App   All users_files/bootstrap.js"></script>
+<script data-turbolinks-track="true" src="./Ruby on Rails Tutorial Sample App   All users_files/turbolinks.js"></script>
+<script data-turbolinks-track="true" src="./Ruby on Rails Tutorial Sample App   All users_files/sessions.js"></script>
+<script data-turbolinks-track="true" src="./Ruby on Rails Tutorial Sample App   All users_files/static_pages.js"></script>
+<script data-turbolinks-track="true" src="./Ruby on Rails Tutorial Sample App   All users_files/users.js"></script>
+<script data-turbolinks-track="true" src="./Ruby on Rails Tutorial Sample App   All users_files/application.js"></script>
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="SIby6zOECaWQbuD01IPWbC/kXrYhXCBmnX3EqyOsUUE=" name="csrf-token">
+  <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head><body><header class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+      <header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a href="http://localhost:3000/" id="logo">sample app</a>
+      <nav>
+        <ul class="nav pull-right">
+          <li><a href="http://localhost:3000/">Home</a></li>
+          <li><a href="http://localhost:3000/help">Help</a></li>
+            <li><a href="./Ruby on Rails Tutorial Sample App   All users_files/Ruby on Rails Tutorial Sample App   All users.html">Users</a></li>
+            <li id="fat-menu" class="dropdown">
+              <a href="http://localhost:3000/users#" class="dropdown-toggle" data-toggle="dropdown">
+                Account <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="http://localhost:3000/users/1">Profile</a></li>
+                <li><a href="http://localhost:3000/users/1/edit">Settings</a></li>
+                <li class="divider"></li>
+                <li>
+                  <a data-method="delete" href="http://localhost:3000/signout" rel="nofollow">Sign out</a>
+                </li>
+              </ul>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+      <div class="container">
+        <a href="http://localhost:3000/users#" id="logo">sample app</a>
+        <nav>
+          <ul class="nav pull-right">
+            <li><a href="http://localhost:3000/users#">Home</a></li>
+            <li><a href="http://localhost:3000/users#">Help</a></li>
+            <li><a href="http://localhost:3000/users#">Sign In</a></li>
+          </ul>         
+        </nav>  
+      </div>
+    </div>
+  </header>
+
+
+  <header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a href="http://localhost:3000/" id="logo">sample app</a>
+      <nav>
+        <ul class="nav pull-right">
+          <li><a href="http://localhost:3000/">Home</a></li>
+          <li><a href="http://localhost:3000/help">Help</a></li>
+            <li><a href="./Ruby on Rails Tutorial Sample App   All users_files/Ruby on Rails Tutorial Sample App   All users.html">Users</a></li>
+            <li id="fat-menu" class="dropdown">
+              <a href="http://localhost:3000/users#" class="dropdown-toggle" data-toggle="dropdown">
+                Account <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="http://localhost:3000/users/1">Profile</a></li>
+                <li><a href="http://localhost:3000/users/1/edit">Settings</a></li>
+                <li class="divider"></li>
+                <li>
+                  <a data-method="delete" href="http://localhost:3000/signout" rel="nofollow">Sign out</a>
+                </li>
+              </ul>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+  <div class="container">
+      <h1>All users</h1>
+
+<div class="pagination"><ul><li class="prev previous_page disabled"><a href="http://localhost:3000/users#">← Previous</a></li> <li class="active"><a rel="start" href="http://localhost:3000/users?page=1">1</a></li> <li><a rel="next" href="http://localhost:3000/users?page=2">2</a></li> <li><a href="http://localhost:3000/users?page=3">3</a></li> <li><a href="http://localhost:3000/users?page=4">4</a></li> <li class="next next_page "><a rel="next" href="http://localhost:3000/users?page=2">Next →</a></li></ul></div>
+
+<ul class="users">
+    <li>
+	<img alt="Example User" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/bebfcf57d6d8277d806a9ef3385c078d">
+  <a href="http://localhost:3000/users/1">Example User</a>
+</li>
+    <li>
+	<img alt="Dr. Francis Wunsch" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/03037e249b97891693d6e292289be0ff">
+  <a href="http://localhost:3000/users/2">Dr. Francis Wunsch</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/2" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Nyasia Gusikowski" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/2065436fdfe2d27dc7f06b6787a4a1af">
+  <a href="http://localhost:3000/users/3">Nyasia Gusikowski</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/3" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Dino Mertz" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/4788f8d222055ddd54d12b75514cd8c3">
+  <a href="http://localhost:3000/users/4">Dino Mertz</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/4" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Della Zieme" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/b0e247198b823a9bd5908730477b2cc2">
+  <a href="http://localhost:3000/users/5">Della Zieme</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/5" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Jarvis Heller PhD" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/3cd98f56e3a0822a762c9a4b85fd5685">
+  <a href="http://localhost:3000/users/6">Jarvis Heller PhD</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/6" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Dorothy Jacobson III" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/4556918922ee2836241af45928ab0618">
+  <a href="http://localhost:3000/users/7">Dorothy Jacobson III</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/7" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Sabina Haag" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/6b86329f0eabfdc26948d0c4ab7a5e36">
+  <a href="http://localhost:3000/users/8">Sabina Haag</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/8" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Gaston Price" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/fb766491c658ffaf308836aab77a874f">
+  <a href="http://localhost:3000/users/9">Gaston Price</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/9" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Mrs. Jesus Lueilwitz" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/e7bd8c88299e730792bda440e23722a9">
+  <a href="http://localhost:3000/users/10">Mrs. Jesus Lueilwitz</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/10" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Mr. Leonel Hickle" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/8ddeccab0489f1746d43dc0e6ed659d4">
+  <a href="http://localhost:3000/users/11">Mr. Leonel Hickle</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/11" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Albert Schmitt" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/29e5c6c90a5a775f04457add23bbdc40">
+  <a href="http://localhost:3000/users/12">Albert Schmitt</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/12" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Mr. Brandt Mayert" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/f92b4b5fe1f2713c9b23e2081a21280c">
+  <a href="http://localhost:3000/users/13">Mr. Brandt Mayert</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/13" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Tess Yost" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/ec6557a80b1ca1a3fd33156e9752ba46">
+  <a href="http://localhost:3000/users/14">Tess Yost</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/14" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Raymundo Considine" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/4e40b83c7326e6fc20f89d2a58d0b007">
+  <a href="http://localhost:3000/users/15">Raymundo Considine</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/15" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Trystan Bogisich" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/e8a59e5980a0337ec66beac5355d26f5">
+  <a href="http://localhost:3000/users/16">Trystan Bogisich</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/16" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Gladys Smitham" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/ef9489921fbb08e5610a5bdb3c666631">
+  <a href="http://localhost:3000/users/17">Gladys Smitham</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/17" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Noah White MD" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/92586baed72871b8a0d19d3496e06ffa">
+  <a href="http://localhost:3000/users/18">Noah White MD</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/18" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Lavern Tremblay" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/5eff015710bebce6f4c7a4e0d90d561d">
+  <a href="http://localhost:3000/users/19">Lavern Tremblay</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/19" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Gisselle Dickens" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/2685984ae14ace13e01510d4d4102ae4">
+  <a href="http://localhost:3000/users/20">Gisselle Dickens</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/20" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Mauricio Pfeffer" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/5a161f18813f2a355916d23fa1a53092">
+  <a href="http://localhost:3000/users/21">Mauricio Pfeffer</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/21" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Frieda Becker Sr." class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/78484d59f184c6690af3db3f15c0ce7b">
+  <a href="http://localhost:3000/users/22">Frieda Becker Sr.</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/22" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Ms. Madyson Lakin" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/b3b47dfad3d5e1bec99ba22d49f3e4ad">
+  <a href="http://localhost:3000/users/23">Ms. Madyson Lakin</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/23" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Peter Jacobs MD" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/e48fecda4dc718ca41453f4cfc31e0be">
+  <a href="http://localhost:3000/users/24">Peter Jacobs MD</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/24" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Maryse Gislason" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/949272e115f08275bdaab4e619b918fc">
+  <a href="http://localhost:3000/users/25">Maryse Gislason</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/25" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Liam Murray" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/0a6585a7611a066b5b0f3242b81a7c4b">
+  <a href="http://localhost:3000/users/26">Liam Murray</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/26" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Katharina Kemmer III" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/8bea7a84fe792a6706a418c6439a7533">
+  <a href="http://localhost:3000/users/27">Katharina Kemmer III</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/27" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Elton Sauer" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/747cc835a8465b8b1ac3c87929137dc4">
+  <a href="http://localhost:3000/users/28">Elton Sauer</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/28" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Effie Lindgren" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/fc2ef4368624bd6c04b9067d57653b48">
+  <a href="http://localhost:3000/users/29">Effie Lindgren</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/29" rel="nofollow">delete</a>
+</li>
+    <li>
+	<img alt="Dr. Moises Volkman" class="gravatar" src="./Ruby on Rails Tutorial Sample App   All users_files/ec2aff8d19609336fb8c8f718a12ec51">
+  <a href="http://localhost:3000/users/30">Dr. Moises Volkman</a>
+    | <a data-confirm="You sure?" data-method="delete" href="http://localhost:3000/users/30" rel="nofollow">delete</a>
+</li>
+</ul>
+
+<div class="pagination"><ul><li class="prev previous_page disabled"><a href="http://localhost:3000/users#">← Previous</a></li> <li class="active"><a rel="start" href="http://localhost:3000/users?page=1">1</a></li> <li><a rel="next" href="http://localhost:3000/users?page=2">2</a></li> <li><a href="http://localhost:3000/users?page=3">3</a></li> <li><a href="http://localhost:3000/users?page=4">4</a></li> <li class="next next_page "><a rel="next" href="http://localhost:3000/users?page=2">Next →</a></li></ul></div>
+      <footer class="footer">
+<small>
+	<a href="http://railstutoria.org/">Rails Tutorial</a>
+</small>
+<nav>
+	<ul>
+		<li><a href="http://localhost:3000/about">About</a></li>
+		<li><a href="http://localhost:3000/contact">Contact</a></li>
+		<li><a href="http://news.railstutorial.org/">News</a></li>
+	</ul>
+</nav>
+</footer>
+
+      <pre class="debug_dump">--- !ruby/hash:ActionController::Parameters
+action: index
+controller: users
+</pre>
+  </div>
+
+</body></html>
